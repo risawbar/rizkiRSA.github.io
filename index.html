@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    
+    <!-- Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title>Rizki Setiawan</title>
+</head>
+<body>
+    <header class="nav-container">
+        <nav class="nav-list">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="https://linkedin.com/in/risawbar">Linkedin</a></li>
+                <li> <a href="https://fb.me/risawbar">Facebook</a></li>
+                <li> <a href="https://inidisebut.blogspot.com/">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div id="content">
+                <article class="card">
+                    <h2>Olla</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est atque laudantium, ullam maiores ducimus autem sit expedita saepe voluptates illum et, beatae neque nihil quasi consequuntur dolorum delectus, exercitationem quis.</p>
+                </article>
+
+                <article class="card">
+                    <h2>Olla</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est atque laudantium, ullam maiores ducimus autem sit expedita saepe voluptates illum et, beatae neque nihil quasi consequuntur dolorum delectus, exercitationem quis.</p>
+                </article>
+
+                <article class="card">
+                    <h2>Olla</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est atque laudantium, ullam maiores ducimus autem sit expedita saepe voluptates illum et, beatae neque nihil quasi consequuntur dolorum delectus, exercitationem quis.</p>
+                </article>
+
+                <article class="card">
+                    <h2>Olla</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est atque laudantium, ullam maiores ducimus autem sit expedita saepe voluptates illum et, beatae neque nihil quasi consequuntur dolorum delectus, exercitationem quis.</p>
+                </article>
+
+                <article class="card">
+                    <h2>Olla</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est atque laudantium, ullam maiores ducimus autem sit expedita saepe voluptates illum et, beatae neque nihil quasi consequuntur dolorum delectus, exercitationem quis.</p>
+                </article>
+
+            </div>
+        
+        <aside>
+            <div id="content2">
+                <article class="card">
+                    <header class="profile-header">
+                        <h2>AUTHOR</h2>
+                        <figure>
+                            <img src="assets/image/rizki-img.jpg" alt="rizki-img" class="img-profile">
+                            <figcaption><strong>RIZKI SETIAWAN</strong></figcaption>
+                        </figure>
+                    </header>
+
+                    <section>
+                        <p>Saya merupakan seorang freshgraduate jurusan psikologi yang tertarik untuk mempelajari dan mendalami tentang dunia IT khususnya pemrograman web
+                            saat ini saya sedang magang di salah satu perusahaan jasa perbaikan kendaraan untuk posisi IT Programmer
+                        </p>
+                    </section>
+                </article>
+
+                <article>
+                    <section class="card2">
+                        <h3>Waktu Sekarang</h3>
+                        <table>
+                            <tr>
+                                <th>Hari :</th>
+                                <td id="hari"></td>
+                            </tr>
+                            <tr>
+                                <th>Tanggal :</th>
+                                <td id="tanggal"></td>
+                            </tr>
+                            <tr>
+                                <th>Jam :</th>
+                                <td id="jam"></td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>                              
+            </div>       
+        </aside>
+    </main>
+
+    <footer>
+        <p>Created By Risawbar</p>
+    </footer>
+</body>
+<script>
+    const a = new Date();
+    const b = {weekday: 'long'}
+    const c = {day: 'numeric', month: 'long', year: 'numeric'}
+    
+    document.getElementById("hari").innerHTML = a.toLocaleDateString('id-ID',b);
+    document.getElementById("tanggal").innerHTML = a.toLocaleDateString('id-ID',c);
+    document.getElementById("jam").innerHTML = a.toLocaleTimeString();
+</script>
+</html>

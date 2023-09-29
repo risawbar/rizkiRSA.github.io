@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 2rem;
+}
+
+footer {
+    background-color: #1877f2;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+header.nav-container .nav-list {
+    background-color: #1877f2;
+    padding: 7px;
+    position: sticky;
+    top: 0;
+}
+
+header.nav-container .nav-list li a {
+   text-decoration: none;
+   color: black;
+} 
+
+header.nav-container .nav-list ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+header.nav-container .nav-list li {
+    list-style-type: none;
+}
+
+header.nav-container .nav-list li:hover a {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: white;
+  background-color: #125dbf;
+  transition: all .2s ease-out;
+}
+
+.card {
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.card2 {
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    margin-left: 2rem;
+}
+
+th {
+    text-align: justify;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+#content2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+
+img.img-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main aside {
+    text-align: justify;
+    flex: 1;
+}
+
+.profile-header {
+    text-align: center;
+}
+
+#waktu {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    main {
+        flex-flow: column nowrap;
+    }
+
+    nav ul {
+        justify-content: center;
+      }
+
+    main aside article {
+        align-self: center;
+    }
+
+    .card2 {
+        padding: 1rem;
+    }
+}
